@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diva Pandey</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+   <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="assets/dp.png" type="image/x-icon">
+  </head>
+
+  <body>
+    <!-- Scroll Progress Bar -->
+<div class="fixed right-6 top-1/2 transform -translate-y-1/2 h-64 w-1.5 bg-gray-700 rounded-full z-50 hidden sm:block">
+  <div id="scroll-indicator" class="bg-[#fc83d2] h-0 w-full rounded-full transition-all duration-300 ease-out shadow-md shadow-[#fc83d2]"></div>
+</div>
+    <!-- Loading Animation -->
+<div id="loading">
+  <div class="loading-text" id="name-loader">
+    <span data-text="D">D</span>
+    <span data-text="I">I</span>
+    <span data-text="V">V</span>
+    <span data-text="A">A</span>
+  </div>
+</div>
+    <!-- Hero Section -->
+<section class="position-relative container-fluid min-vh-100 d-flex justify-content-center align-items-center text-white overflow-hidden" style="background-color: #000000">
+  <!-- Hero Particle Background -->
+  <div id="particles-hero" class="position-absolute w-100 h-100 top-0 start-0" style="z-index: 0"></div>
+
+  <!-- Hero Content -->
+  <div class="container text-center position-relative" style="z-index: 1">
+    <h1 class="display-4 fw-bold">
+      <span class="text-white me-2">Hi, I'm</span>
+      <button class="button" data-text="Diva">
+        <span class="actual-text">&nbsp;Diva&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;Diva&nbsp;</span>
+      </button>
+    </h1>
+    <p class="lead text-light mt-3">
+      AI enthusiast turning ideas into intelligent solutions with Generative AI and ML.
+      <br>
+      Curious, creative, and always building.
+    </p>
+    <a href="#projects" class="shadow__btn mt-4">View Projects</a>
+  </div>
+</section>
+
+    <!-- About Me Section -->
+<section id="about" class="bg-black text-white py-24 px-8">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row-reverse items-center justify-center text-center md:text-left gap-16 px-4">
+
+    <!-- Profile Image -->
+    <div class="flex-shrink-0 w-72 h-72 rounded-xl overflow-hidden" id="about-img">
+      <img src="./assets/profile.png" alt="Diva Pandey" class="w-full h-full object-cover" />
+    </div>
+
+    <!-- Text Content -->
+    <div class="max-w-2xl" id="about-text">
+      <h2 class="text-3xl md:text-4xl font-semibold leading-snug mb-4">
+        I’m <span class="text-[#fc83d2] font-bold">Diva Pandey</span> — a 
+        Gen-AI and Machine Learning developer, building creative web applications.
+      </h2>
+
+      <p class="text-gray-300 text-lg leading-relaxed mb-6">
+        I'm currently pursuing my B.Tech in Computer Science Engineering at
+        Shiv Nadar University, Uttar Pradesh. I have experience working with 
+        Generative AI and Machine Learning models, with a passion for building intelligent, 
+        scalable solutions.
+      </p>
+
+      <p class="text-gray-300 text-lg leading-relaxed mb-6">
+        My tech stack includes 
+        <span class="text-[#fc83d2] font-bold">Python</span>,
+        <span class="text-[#fc83d2] font-bold">C++</span>,
+        <span class="text-[#fc83d2] font-bold">Gen-AI</span>,
+        <span class="text-[#fc83d2] font-bold">HTML/CSS</span>,
+        <span class="text-[#fc83d2] font-bold">LLMs</span>,
+        <span class="text-[#fc83d2] font-bold">React</span>
+         and I enjoy collaborating in teams to bring creative ideas to life. 
+        Outside of code, I'm interested in exploring new ideas and experiences. 
+        I also read a lot of thriller novels. And dance sometimes.
+      </p>
+
+      <!-- Social Icons -->
+      <div class="flex space-x-5 mt-6 align-items-center justify-content-center md:justify-start">
+        <a
+          href="https://www.linkedin.com/in/diva-pandey-07858a264/"
+          target="_blank"
+        >
+          <img src="./assets/linkedin-logo.png" class="w-9 h-9" alt="linkedin-logo">
+        </a>
+        <a
+          href="mailto:diva14pandey@gmail.com"
+        >
+          <img src="./assets/mail-logo.png" class="w-9 h-9" alt="mail-logo">
+        </a>
+        <a
+          href="https://github.com/notdiva"
+          target="_blank"
+        >
+          <img src="./assets/github-logo.png" class="w-9 h-9" alt="github-logo">
+        </a>
+      </div>
+
+      <!-- Download Resume Button -->
+      <div class="flex align-items-center justify-content-center mt-8">
+        <a
+          href="./assets/Diva_resume.pdf"
+          download
+        >
+          <button class="dbutton" type="dbutton">
+            <span class="dbutton__text">Resume</span>
+            <span class="dbutton__icon">
+              <!-- SVG Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" class="svg">
+                <path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path>
+                <path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path>
+                <path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path>
+              </svg>
+            </span>
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- JOURNEY SECTION -->
+<section id="journey" class="bg-black text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold mb-16 text-center text-[#fc83d2]">My Journey</h2>
+    
+    <div class="relative">
+      <!-- Vertical Line -->
+      <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#fcf0af]"></div>
+
+      <!-- Timeline Card 1 - Right -->
+      <div class="relative mb-16 md:mb-24 md:flex justify-end">
+        <div class="hidden md:block absolute w-4 h-4 bg-[#fc83d2] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+        <div class="md:w-1/2"></div>
+        <div class="md:w-1/2 md:pl-10">
+          <div class="bg-[#111] p-6 rounded-2xl border border-[#fc83d2] shadow-lg journey-card">
+            <h3 class="text-xl font-semibold text-[#fc83d2]">Internship at @XYZ </h3>
+            <span class="text-sm text-gray-400">June 2025 - Sept 2025</span>
+            <p class="mt-2 text-gray-300"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Card 2 - Left -->
+      <div class="relative mb-16 md:mb-24 md:flex justify-start">
+        <div class="hidden md:block absolute w-4 h-4 bg-[#fc83d2] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+        <div class="md:w-1/2 md:pr-10">
+          <div class="bg-[#111] p-6 rounded-2xl border border-[#fc83d2] shadow-lg journey-card">
+            <h3 class="text-xl font-semibold text-[#fc83d2]">Undergraduate Research Assistant @Shiv Nadar University</h3>
+            <span class="text-sm text-gray-400">Sept 2024 - Sept 2025</span>
+            <p class="mt-2 text-gray-300"> Analyzed protein-protein interaction networks using DFS and 
+              custom algorithms, leveraging Python and graph theory to enhance biological pathway 
+              reconstruction and prediction.</p>
+          </div>
+        </div>
+        <div class="md:w-1/2"></div>
+      </div>
+
+      <!-- Timeline Card 3 - Right -->
+      <div class="relative mb-16 md:mb-24 md:flex justify-end">
+        <div class="hidden md:block absolute w-4 h-4 bg-[#fc83d2] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+        <div class="md:w-1/2"></div>
+        <div class="md:w-1/2 md:pl-10">
+          <div class="bg-[#111] p-6 rounded-2xl border border-[#fc83d2] shadow-lg journey-card">
+            <h3 class="text-xl font-semibold text-[#fc83d2]">B.Tech – Computer Science </h3>
+            <span class="text-sm text-gray-400">Shiv Nadar University, Uttar Pradesh (2022 - 2026)</span>
+            <p class="mt-2 text-gray-300">Focused on Gen-AI projects and Machine Learning Algorithms 
+              while exploring cybersecurity concepts.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Card 4 - Left -->
+      <div class="relative mb-16 md:mb-24 md:flex justify-start">
+        <div class="hidden md:block absolute w-4 h-4 bg-[#fc83d2] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+        <div class="md:w-1/2 md:pr-10">
+          <div class="bg-[#111] p-6 rounded-2xl border border-[#fc83d2] shadow-lg journey-card">
+            <h3 class="text-xl font-semibold text-[#fc83d2]">High School – PCM with Computer Science</h3>
+            <span class="text-sm text-gray-400">Sri Venkateshwar International School (2022)</span>
+            <p class="mt-2 text-gray-300">Got introduced to computer science by building 
+              basic projects with mySQL and CSV, including an online grocery shopping experience.</p>
+          </div>
+        </div>
+        <div class="md:w-1/2"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK SECTION -->
+<section id="tech-stack" class="bg-black text-white py-20 px-6 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto flex flex-col gap-20">
+    <!-- FRONTEND -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="frontend">
+      <!-- Label -->
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#frontend').scrollIntoView({behavior: 'smooth'})">LANGUAGES</div>
+      </div>
+
+      <!-- Tech Grid -->
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+        <!-- Tech Icons Here -->
+         
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-6 h-6"><span class="text-lg">Python</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="w-6 h-6"><span class="text-lg">C++</span></div>
+        <div class="flex items-center gap-2 "><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-6 h-6"><span class="text-lg">Javascript</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-6 h-6"><span class="text-lg">React</span></div>
+        
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" class="w-6 h-6"/>
+         <span class="text-lg">Tailwind CSS</span></div>
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"  class="w-6 h-6"/><span class="text-lg">HTML</span></div>
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="w-6 h-6" />
+         <span class="text-lg">CSS</span></div>
+         <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="w-6 h-6"><span class="text-lg">Node.js</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BACKEND 
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="backend">
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#backend').scrollIntoView({behavior: 'smooth'})">BACKEND</div>
+      </div>
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="w-6 h-6"><span class="text-lg">Node.js</span></div>
+      </div>
+    </div> -->
+
+    <!-- FRAMEWORK -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="database">
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#database').scrollIntoView({behavior: 'smooth'})">FRAMEWORKS</div>
+      </div>
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+        <div class="flex items-center gap-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" class="w-6 h-6" />
+        <span class="text-lg">Linux</span>
+      </div>
+        <div class="flex items-center gap-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" class="w-6 h-6" />
+        <span class="text-lg">VSCode</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <img src="https://cdn-icons-png.flaticon.com/512/899/899704.png" alt="Lightning Icon" class="w-4 h-4" />
+        <span class="text-lg">Flask</span>
+      </div>
+    </div>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="tools">
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#tools').scrollIntoView({behavior: 'smooth'})">TOOLS</div>
+      </div>
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" class="w-6 h-6"><span class="text-lg">AWS</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn-icons-png.flaticon.com/512/4712/4712033.png" alt="Robot Icon" class="w-6 h-6" /><span class="text-lg">Generative-AI</span></div>
+        <div class="flex items-center gap-2"><img src="./assets/github-logo.png" class="w-6 h-6"><span class="text-lg">GitHub</span></div>
+        <div class="flex items-center gap-2"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" class="w-6 h-6"><span class="text-lg">Scikit-Learn</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="relative bg-black text-white py-20 px-6 overflow-hidden">
+
+  <!-- PARTICLES BACKGROUND -->
+  <div id="particles-projects" class="absolute top-0 left-0 w-full h-full z-0"></div>
+
+  <!-- ACTUAL PROJECT CONTENT -->
+  <div class="relative z-10">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">Projects</h2>
+      <p class="text-gray-300 text-lg">What I’ve Been Building Lately...</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/plottwist.png" alt="Portfolio Website Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">PlotTwist - Book Recommendation System</h3>
+          <p class="text-gray-700 mb-4">
+            Recommends books tailored to user-selected genres, offering smart suggestions powered 
+            by machine learning. Users can also browse through a curated library, creating a personalized 
+            reading experience that adapts to their preferences and interests over time.
+          </p>
+
+          <!-- Tech Stack Badges -->
+            <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-4 h-4" />
+              Python
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://img.icons8.com/ios-filled/50/brain.png" alt="Machine Learning" class="w-4 h-4" />
+              Machine Learning
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn-icons-png.flaticon.com/512/899/899704.png" alt="Lightning Icon" class="w-4 h-4" />
+              Flask
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="w-4 h-4" />
+              HTML
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" class="w-6 h-6" />
+              CSS
+            </span>
+            </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://github.com/notdiva/PlotTwist" target="_blank"
+              class="bg-[#fc83d2] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo 
+            </a>
+            <a href="https://github.com/notdiva/PlotTwist" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub 
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/AES.jpg" alt="Portfolio Website Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">AES Password Manager</h3>
+          <p class="text-gray-700 mb-4">
+            Store your passwords securely with AES and SHA-256 encryption. This app features a 
+            master password system, providing a safe and private way to handle sensitive information 
+            without relying on the cloud.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-4 h-4" />
+              Python
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-6 h-6" />
+              JSON
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="w-4 h-4" />
+              HTML
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" class="w-6 h-6" />
+              CSS
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://img.icons8.com/ios-filled/50/lock--v1.png" alt="Lock" class="w-4 h-4" />
+              AES
+            </span>
+
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://pwd-manager.streamlit.app/" target="_blank"
+              class="bg-[#fc83d2] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo 
+            </a>
+            <a href="https://github.com/notdiva/AES-password-manager" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub 
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/handsign.png" alt="Finger Fiasco Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">HandSign Recognition System</h3>
+          <p class="text-gray-700 mb-4">
+            A real-time hand gesture recognition system using computer vision to detect, segment, 
+            and track hand movements via webcam.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-4 h-4" />
+              Python
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://img.icons8.com/ios-filled/50/brain.png" alt="Machine Learning" class="w-4 h-4" />
+              Machine Learning
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV" class="w-4 h-4" />
+              OpenCV
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit-learn" class="w-4 h-4" />
+              scikit-learn
+            </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://drive.google.com/file/d/1OpNc-y5iGxpcQm_SUkthlCeZW4t91YMD/view" target="_blank"
+              class="bg-[#fc83d2] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo 
+            </a>
+            <a href="https://github.com/notdiva/Handsign-Recognition" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub 
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+       <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/brainstorm.png" alt="brAInstorm buddy" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">brAInstorm buddy - GenAI Chatbot</h3>
+          <p class="text-gray-700 mb-4">
+            brAInstorm Buddy is an AI-powered brainstorming tool built with Streamlit and OpenRouter. 
+            Just enter your startup idea and get instant product names, taglines, business models, 
+            and launch strategies to spark your next venture.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-4 h-4" />
+              Python
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/html5/html5-original.svg" alt="HTML" class="w-4 h-4" />
+              HTML
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/css3/css3-original.svg" alt="CSS" class="w-4 h-4" />
+              CSS
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://img.icons8.com/ios-filled/50/robot-2.png" alt="Robot" class="w-4 h-4" />
+              OpenAI
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.svg" alt="Streamlit" class="w-4 h-4" />
+              Streamlit
+            </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://brainstormbuddy.streamlit.app/" target="_blank"
+              class="bg-[#fc83d2] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo
+            </a>
+            <a href="https://github.com/notdiva/brAInstorm" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/image.png" alt="Portfolio Website Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">Image Recognition & Object Detection</h3>
+          <p class="text-gray-700 mb-4">
+           An intelligent object detection system that identifies and classifies objects in images 
+           using Amazon Rekognition. Designed for applications such as surveillance, safety monitoring.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" class="w-4 h-4" />
+              HTML
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" class="w-4 h-4" />
+              CSS
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Magnifying Glass" class="w-4 h-4" />
+              AWS Rekognition
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Person Icon" class="w-4 h-4" />
+              AWS IAM
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png" alt="Bucket Icon" class="w-4 h-4" />
+              AWS S3
+            </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://drive.google.com/drive/folders/1M2RqvCo37Ptv-8_9biozVWB3_FboELy8?usp=sharing" target="_blank"
+              class="bg-[#fc83d2] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo 
+            </a>
+            <a href="https://github.com/notdiva/AWS-ImageRecognition-ObjectDetection" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub 
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/dotsnboxes.png" alt="Dots n Boxes Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">Dots & Boxes - Hybrid AI Project</h3>
+          <p class="text-gray-700 mb-4">
+            A hybrid AI for Dots and Boxes using Monte Carlo Tree Search in early/mid-game and 
+            Alpha-Beta Pruning in endgame for strategic and optimal decision-making.          
+          </p>
+
+          <!-- Tech Stack Badges -->
+            <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-4 h-4" />
+              Python
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Tkinter" class="w-4 h-4" />
+              Tkinter
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="Tree" class="w-4 h-4" />
+              MCTS
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://img.icons8.com/ios-filled/50/light-on--v1.png" alt="Idea" class="w-4 h-4" />
+              Alpha-Beta Pruning
+            </span>
+            </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://github.com/notdiva/Dots-and-Boxes-Hybrid-AI-Project" target="_blank"
+              class="bg-[#fc83d2] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo 
+            </a>
+            <a href="https://github.com/notdiva/Dots-and-Boxes-Hybrid-AI-Project" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub 
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+    </div>
+  </div>
+</section>
+
+<!-- UPCOMING PROJECTS SECTION 
+<section id="upcoming-projects" class="relative bg-[#0f0f0f] text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto text-center mb-12">
+    <h2 class="text-4xl font-bold mb-4">Upcoming Projects</h2>
+    <p class="text-gray-400 text-lg">Some exciting ideas I'm currently working on.</p>
+  </div>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto"> -->
+    <!-- CARD: Social Media App 
+    <div class="upcoming-card bg-white text-black rounded-xl shadow-lg p-6">
+      <h3 class="text-xl font-semibold mb-2">Social Media App</h3>
+      <p class="text-gray-700 text-lg mb-4">A modern social media platform featuring user profiles, posts, real-time chat, notifications, and interactive feeds built with the MERN stack and Next.js.</p>
+      <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded text-xs font-semibold">Coming Soon</span>
+    </div>
+-->
+    <!-- CARD: School Management Dashboard 
+    <div class="upcoming-card bg-white text-black rounded-xl shadow-lg p-6">
+      <h3 class="text-xl font-semibold mb-2">School Management Dashboard</h3>
+      <p class="text-gray-700 text-lg mb-4">A MERN-based admin dashboard to manage students, attendance, teachers, and performance data with charts and analytics.</p>
+      <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded text-xs font-semibold">Coming Soon</span>
+    </div>-->
+
+    <!-- CARD: Rental Web Application
+    <div class="upcoming-card bg-white text-black rounded-xl shadow-lg p-6">
+      <h3 class="text-xl font-semibold mb-2">Rental Web Application</h3>
+      <p class="text-gray-700 text-lg mb-4">A property rental platform with user authentication, property listings, filtering, booking system, and admin control panel.</p>
+      <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded text-xs font-semibold">Coming Soon</span>
+    </div>
+  </div>
+</section> 
+-->
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="bg-black text-white py-20 px-6 flex items-center justify-center">
+  <div class="w-full max-w-4xl text-center flex flex-col items-center gap-6">
+    <!-- Subtitle -->
+    <p class="text-gray-400 text-lg">Dreaming up ideas? Let’s bring them to life together.</p>
+
+    <!-- Email Link -->
+    <div class="flex space-x-5 mt-6 align-items-center justify-content-center md:justify-start">
+        <a
+          href="https://www.instagram.com/diva.pandeyy?igsh=dzZhNG51czQ2MjFr&utm_source=qr"
+          target="_blank"
+          class="text-[#0a66c2] text-2xl hover:text-[#339af0] transition"
+        >
+          <img src="./assets/instagram-logo.png"  class="w-9 h-9" alt="instagram-logo">
+        </a>
+        <a
+          href="https://www.linkedin.com/in/diva-pandey-07858a264/"
+          target="_blank"
+          class="text-[#0a66c2] text-2xl hover:text-[#339af0] transition"
+        >
+          <img src="./assets/linkedin-logo.png"  class="w-9 h-9" alt="linkedin-logo">
+        </a>
+        <a
+          href="mailto:diva14pandey@gmail.com"
+          class="text-white text-2xl hover:text-gray-400 transition"
+        >
+          <img src="./assets/mail-logo.png" class="w-9 h-9" alt="mail-logo">
+        </a>
+        <a
+          href="https://github.com/notdiva"
+          target="_blank"
+          class="text-white text-2xl hover:text-gray-400 transition"
+        >
+          <img src="./assets/github-logo.png" class="w-9 h-9" alt="github-logo">
+        </a>
+      </div>
+  </div>
+</button>
+  </div>  
+</section>
+    <a
+      href="mailto:diva14pandey@gamil.com?subject=Let's Connect&body=Hi Diva,%0D%0A%0D%0AI wanted to get in touch with you..."
+      class="fixed-email"
+      title="Mail Me"
+    >
+      diva14pandey@gamil.com
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/@motionone/dom/dist/motion.min.js"></script>
+    <script src="libs/gsap.min.js"></script>
+    <script src="libs/motion.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Observer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EaselPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/PixiPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EasePack.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+    <!-- ParticleJs -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="script.js"></script>
+
+  </body>
+</html>
