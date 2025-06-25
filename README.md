@@ -35,6 +35,6 @@ A sleek, responsive personal portfolio built to showcase my work as a creative f
 ---
 
 ### 🌐 Live Preview
-👉 **Live Demo **
+👉 *Live Demo*
 
 ---
